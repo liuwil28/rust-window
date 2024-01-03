@@ -1,0 +1,30 @@
+[package]
+name = "window"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wgpu = "0.18.0"
+cgmath = "0.18.0"
+# Turn off jpeg_rayon feature for wasm
+image = "0.24.7"
+pollster = "0.3.0"
+anyhow = "1.0.77"
+itertools = "0.12.0"
+
+[dependencies.sdl2]
+version = "0.36.0"
+features = ["raw-window-handle"]
+
+[dependencies.bytemuck]
+version = "1.14.0"
+features = ["derive"]
+
+[dependencies.tobj]
+version = "4.0.0"
+
+[build-dependencies]
+fs_extra = "1.3.0"
+anyhow = "1.0.77"

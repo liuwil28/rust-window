@@ -1,0 +1,3 @@
+replace instances of Deg() with PI const counterparts
+refactor code:
+    "use" statments - add/remove as necessary
